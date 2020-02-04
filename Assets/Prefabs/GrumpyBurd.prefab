@@ -321,10 +321,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b4c7d4e481bc30408252c42d7ef2c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialPos: {x: 0, y: 0, z: 0}
-  LaunchForce: 200
+  LaunchForce: 300
   TimeIdle: 0
-  TimeReset: 2
+  TimeReset: 1
+  level: {fileID: 0}
 --- !u!120 &2428442346848331836
 LineRenderer:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
+    private static int _LevelIndex = 1;
     private Enemy[] _enemies;
     public Burd[] MyBurds;
     public int DeadBurd = 0;
@@ -36,7 +37,12 @@ public class LevelController : MonoBehaviour
             }
         }
         Debug.Log("All enemies are dead");
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (_LevelIndex <= 1)
+        {
+            _LevelIndex++;
+        }
+        string NextLevelName = "LV" + _LevelIndex;
+        SceneManager.LoadScene(NextLevelName);
     }
 
     private void LoadNextBurd()
