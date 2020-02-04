@@ -5,12 +5,15 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] private GameObject _PoufPrefab;
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
         Burd Burd = other.collider.GetComponent<Burd>();
         if (Burd != null)
         {
             Destroy(gameObject);
+            GameObject _Pouf = Instantiate(_PoufPrefab, transform.position, Quaternion.identity);
             return;
         }
 
@@ -24,6 +27,7 @@ public class Enemy : MonoBehaviour
         {
             //Debug.Log(other.GetContact(0).normal);
             Destroy(gameObject);
+            GameObject _Pouf = Instantiate(_PoufPrefab, transform.position, Quaternion.identity);
         }
     }
 }

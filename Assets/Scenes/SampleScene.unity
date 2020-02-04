@@ -885,7 +885,7 @@ Camera:
   far clip plane: 1000
   field of view: 54.613068
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3.4593751
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1664,6 +1664,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5759d9bb9c8c0499b321254da88cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _PoufPrefab: {fileID: 5482206749343792058, guid: 8b2140c4d88289d48bbbd54ceb755634,
+    type: 3}
 --- !u!1 &1785292999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,6 +1908,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5759d9bb9c8c0499b321254da88cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _PoufPrefab: {fileID: 5482206749343792058, guid: 8b2140c4d88289d48bbbd54ceb755634,
+    type: 3}
 --- !u!1 &1884930625
 GameObject:
   m_ObjectHideFlags: 0
