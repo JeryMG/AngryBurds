@@ -2,11 +2,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private GameObject _PoufPrefab;
-    
+    public GameObject _PoufPrefab;
+
+    private void Update()
+    {
+        if (transform.position.y > 9 ||
+            transform.position.y < -9 ||
+            transform.position.x > 15 ||
+            transform.position.x < -15)
+        {
+            string currentScene = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentScene);
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         Burd Burd = other.collider.GetComponent<Burd>();

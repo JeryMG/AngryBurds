@@ -12,9 +12,11 @@ public class Burd : MonoBehaviour
     private Vector3 InitialPos;
     [SerializeField] private float LaunchForce = 10f;
     private bool BurdLaunched;
-    private float TimeIdle;
-    [SerializeField]private float TimeReset = 2;
+    public float TimeIdle;
+    public float TimeReset = 2;
     private LineRenderer directionRender;
+
+    [SerializeField] private LevelController level;
 
     private void Awake()
     {
@@ -42,7 +44,7 @@ public class Burd : MonoBehaviour
             transform.position.y < -9 ||
             transform.position.x > 10 ||
             transform.position.x < -15 ||
-            TimeIdle >= TimeReset ||
+            /*TimeIdle >= TimeReset ||*/
             Input.GetKeyDown(KeyCode.Space))
         {
             string currentScene = SceneManager.GetActiveScene().name;
@@ -60,6 +62,7 @@ public class Burd : MonoBehaviour
     private void OnMouseUp()
     {
         CurrentColor = (Color.white);
+        level.DeadBurd++;
         //Launch the burd
         BurdLaunched = true;
         directionRender.enabled = false;
@@ -69,7 +72,7 @@ public class Burd : MonoBehaviour
     }
 
     private void OnMouseDrag()
-    { 
+    {
         Vector3 NewPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector3(NewPos.x,NewPos.y,0);
     }
