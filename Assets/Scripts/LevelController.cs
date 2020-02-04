@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Mime;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelController : MonoBehaviour
 {
@@ -10,6 +13,8 @@ public class LevelController : MonoBehaviour
     private Enemy[] _enemies;
     public Burd[] MyBurds;
     public int DeadBurd = 0;
+
+    public TMP_Text LevelNumberDisplay;
 
     private void OnEnable()
     {
@@ -23,6 +28,7 @@ public class LevelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        DisplayCurrentLv();
         LoadNextBurd();
         if (DeadBurd == 2 && MyBurds[MyBurds.Length-1].TimeIdle >= MyBurds[MyBurds.Length-1].TimeReset)
         {
@@ -64,5 +70,10 @@ public class LevelController : MonoBehaviour
         {
             MyBurds[i].gameObject.SetActive(false);
         }
+    }
+
+    private void DisplayCurrentLv()
+    {
+        LevelNumberDisplay.text = "Level " + _LevelIndex.ToString();
     }
 }

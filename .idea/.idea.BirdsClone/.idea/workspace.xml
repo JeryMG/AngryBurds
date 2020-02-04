@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a423a7d-4689-44b7-9c1c-99c2bd4c4a55" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BirdsClone/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BirdsClone/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BirdsClone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BirdsClone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GrumpyBurd.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GrumpyBurd.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LV1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LV1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LV2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LV2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580808239819</updated>
-      <workItem from="1580808245327" duration="19828000" />
+      <workItem from="1580808245327" duration="21832000" />
     </task>
     <servers />
   </component>
